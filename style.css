@@ -14,16 +14,39 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  padding: 50px;
+  padding: 10px 50px;
+}
+
+.header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 10;
+  width: 100%;
+  min-width: 90vw;
+}
+
+.solid-container {
+  background-color: #296ca8;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.gradient {
+  height: 3em;
+  background-image: linear-gradient(
+    rgba(41, 109, 168, 1),
+    rgba(41, 109, 168, 0)
+  );
 }
 
 h1 {
-  margin-bottom: 0;
+  margin-block-start: 0;
+  margin-block-end: 10px;
   text-align: center;
 }
 
 .filter-container {
-  margin-top: 20px;
+  margin: auto;
   width: 80vw;
   max-width: 800px;
 }
